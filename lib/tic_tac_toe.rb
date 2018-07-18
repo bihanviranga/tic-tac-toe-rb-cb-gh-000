@@ -105,6 +105,5 @@ def play(board)
     value = gets.strip
     turn(board)
     game_over = over?(board)
-    iter +=1
   end
 end
