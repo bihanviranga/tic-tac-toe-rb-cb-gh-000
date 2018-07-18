@@ -99,11 +99,9 @@ def winner(board)
 end
 
 def play(board)
-  loop do
-    puts "Make your move: "
-    over?(board)
-    value = gets.strip
-    value = input_to_index(value)
-    move(board,value,current_player(board))
-  end
+  puts "Make your move: "
+  over?(board)
+  value = gets.strip
+  value = input_to_index(value)
+  move(board,value,current_player(board))
 end
