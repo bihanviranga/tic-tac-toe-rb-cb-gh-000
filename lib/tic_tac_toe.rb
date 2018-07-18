@@ -99,11 +99,5 @@ def winner(board)
 end
 
 def play(board)
-  player = current_player(board)
-  puts "Player #{player}'s turn: "
-  value = gets.strip
-  if valid_move?
-    move(board,player,value)
-  end
-  
+  puts "Make your move: "
 end
