@@ -105,7 +105,7 @@ def play(board)
     value = gets.strip
     index = input_to_index(value)
     c_p= current_player(board)
-    move(board,index,c_p
+    move(board,index,c_p)
     over?(board)
     iter +=1
   end
