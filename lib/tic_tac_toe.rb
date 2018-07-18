@@ -103,8 +103,8 @@ def play(board)
   while iter<9 do
     puts "Make your move: "
     value = gets.strip
-    value = input_to_index(value)
-    move(board,value,current_player(board))
+    index = input_to_index(value)
+    move(board,index,current_player(board))
     over?(board)
     iter +=1
   end
