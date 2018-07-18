@@ -99,7 +99,7 @@ def winner(board)
 end
 
 def play(board)
-  game_over = false
-  turn(board)
-  game_over = over?(board)
+  until over?(board) do
+    turn(board)
+  end
 end
