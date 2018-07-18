@@ -101,8 +101,6 @@ end
 def play(board)
   game_over = false
   until game_over do
-    puts "Make your move: "
-    value = gets.strip
     turn(board)
     game_over = over?(board)
   end
