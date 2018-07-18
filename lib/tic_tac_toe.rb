@@ -97,3 +97,14 @@ def winner(board)
   end
   return board[result[0]]
 end
+
+def play(board)
+  player = current_player(board)
+  puts "Player #{player}'s turn: "
+  value = gets.strip
+  if valid_move?
+    move(board,player,value)
+  else
+    puts "Invalid value"
+  end
+end
