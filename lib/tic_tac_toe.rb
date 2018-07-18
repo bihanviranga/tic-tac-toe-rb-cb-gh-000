@@ -104,7 +104,9 @@ def play(board)
     puts "Make your move: "
     value = gets.strip
     turn(board)
-    over?(board)
+    if over?(board)
+      break
+    end
     iter +=1
   end
 end
