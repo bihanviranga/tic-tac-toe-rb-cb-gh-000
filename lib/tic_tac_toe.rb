@@ -100,7 +100,7 @@ end
 
 def play(board)
   game_over = false
-  while !(game_over) do
+  until game_over do
     puts "Make your move: "
     value = gets.strip
     turn(board)
