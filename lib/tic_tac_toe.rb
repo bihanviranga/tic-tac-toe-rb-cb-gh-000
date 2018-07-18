@@ -104,7 +104,6 @@ def play(board)
   value = gets.strip
   if valid_move?
     move(board,player,value)
-  else
-    puts "Invalid value"
   end
+  
 end
