@@ -100,8 +100,6 @@ end
 
 def play(board)
   game_over = false
-  until game_over do
-    turn(board)
-    game_over = over?(board)
-  end
+  turn(board)
+  game_over = over?(board)
 end
