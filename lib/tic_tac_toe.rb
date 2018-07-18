@@ -102,4 +102,11 @@ def play(board)
   until over?(board) do
     turn(board)
   end
+
+  p_win = winner(board)
+  if p_win=="X" || p_win=="O"
+    puts "Congratulations #{p_win}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  
 end
