@@ -99,8 +99,8 @@ def winner(board)
 end
 
 def play(board)
-  iter = 0
-  while iter<9 do
+  game_over = false
+  while !(game_over) do
     puts "Make your move: "
     value = gets.strip
     turn(board)
