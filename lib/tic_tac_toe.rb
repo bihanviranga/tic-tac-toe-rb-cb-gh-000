@@ -102,11 +102,10 @@ def play(board)
   iter = 0
   while iter<9 do
     puts "Make your move: "
-    over?(board)
     value = gets.strip
     value = input_to_index(value)
     move(board,value,current_player(board))
-
+    over?(board)
     iter +=1
   end
 end
