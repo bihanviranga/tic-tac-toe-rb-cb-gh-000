@@ -100,11 +100,11 @@ end
 
 def play(board)
   iter = 0
-  # while iter<9 do
+  while iter<9 do
     puts "Make your move: "
     value = gets.strip
     turn(board)
     over?(board)
     iter +=1
-  # end
+  end
 end
