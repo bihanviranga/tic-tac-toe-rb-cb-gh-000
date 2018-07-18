@@ -39,7 +39,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, index,current_player)
+    move(board, index,current_player(board))
     display_board(board)
   else
     turn(board)
@@ -102,5 +102,5 @@ def play(board)
   puts "Make your move: "
   over?
   value = gets.strip
-  move(board,current_player,value)
+  move(board,value,current_player(board))
 end
