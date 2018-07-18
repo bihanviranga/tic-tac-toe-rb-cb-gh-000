@@ -106,5 +106,7 @@ def play(board)
     value = gets.strip
     value = input_to_index(value)
     move(board,value,current_player(board))
+
+    iter +=1
   end
 end
