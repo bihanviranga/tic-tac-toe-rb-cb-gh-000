@@ -100,4 +100,6 @@ end
 
 def play(board)
   puts "Make your move: "
+  over?
+  
 end
