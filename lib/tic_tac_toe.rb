@@ -101,5 +101,6 @@ end
 def play(board)
   puts "Make your move: "
   over?
-  
+  value = gets.strip
+  move(board,current_player,value)
 end
