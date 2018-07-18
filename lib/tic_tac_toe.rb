@@ -104,9 +104,7 @@ def play(board)
     puts "Make your move: "
     value = gets.strip
     turn(board)
-    if over?(board)
-      break
-    end
+    game_over = over?(board)
     iter +=1
   end
 end
